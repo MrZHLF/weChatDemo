@@ -1,0 +1,47 @@
+<!--pages/destination/destination.wxml-->
+<!-- 头部内容 star -->
+<view class='header-top'>
+  <view class='img'>
+    <image src='/images/destination/bg.png'></image>
+  </view>
+  <view class='post'>
+    <text>大理</text>
+    <view class='icon'></view>
+  </view>
+  <view class='serach'>
+    <input type='text' placeholder='搜索的目的地/景点/酒店等...'></input>
+    <view class='icon'></view>
+  </view>
+  <view class='city'>
+    <text wx:for="{{hotcity}}" class="{{active==index ? 'active': ''}}" wx:key="{{index}}" data-index='{{index}}' bindtap='activeClick'>{{item}}</text>
+    <view class='line'></view>
+  </view>
+</view>
+<!-- 头部内容end -->
+<!-- 热门景区 start -->
+  <view class='hot-view spot'>
+    <view class='title'>
+      <text></text>
+      <text>周边热门景区</text>
+      <text></text>
+    </view>
+    <view class='img-box'>
+      <view class='img' wx:for="{{hotView}}" wx:key="{{index}}" data-id='{{item.sid}}' bindtap='enterDetaul'>
+        <image src="{{item.imgUrl}}"></image>
+        <text>{{item.title}}</text>
+      </view>
+    </view>
+  </view>
+<!-- 热门景区end -->
+<!-- 周边热门城市 start -->
+<view class='hot-view'>
+  <view class='title'>
+    <text></text>
+    <text>周边热门城市</text>
+    <text></text>
+  </view>
+  <view class='city-box'>
+    <text class='city' wx:for="{{nearbyCity}}" data-cityName='{{item}}' bindtap='enterCity' wx:key="{{index}}">{{item}}</text>
+  </view>
+</view>
+<!-- 周边热门城市 end -->

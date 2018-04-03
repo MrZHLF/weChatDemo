@@ -1,0 +1,51 @@
+<!-- 头部展示图片 -->
+<view class='home'>
+  <view class='img'>
+    <image src='/images/home/banner.png'></image>
+  </view>
+  <!-- 分类 -->
+  <view class='category'>
+    <view class='box'>
+      <image src='/images/home/view.png'></image>
+      <text class='title'>景点</text>
+    </view>
+    <view class='box'>
+      <image src='/images/home/ticket.png'></image>
+      <text class='title'>门票</text>
+    </view>
+    <view class='box'>
+      <image src='/images/home/hotel.png'></image>
+      <text class='title'>酒店</text>
+    </view>
+    <view class='box'>
+      <image src='/images/home/food.png'></image>
+      <text class='title'>美食</text>
+    </view>
+  </view>
+</view>
+<!-- 目的地推荐 -->
+<view class='slide'>
+  <view class='title'>
+    <text>目的地推荐</text>
+    <text>精选推荐好玩的景区</text>
+  </view>
+  <!-- 轮播图展示 -->
+  <swiper indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+    <swiper-item wx:for="{{imgUrls}}">
+      <view class="swiper-img" >
+      <view class='image-wrapper'>
+        <view class='image-wrapper-img'>
+          <image src="{{item}}" class="slide-image"/>
+        </view>
+      </view>
+      </view>
+    </swiper-item>
+  </swiper>
+  <view class='btn'>
+    <view wx:for="{{itemTitle}}">
+      <button class='tag'>{{item.title}}</button>
+    </view>
+    <button class='tabRight'>更多</button>
+  </view>
+</view>

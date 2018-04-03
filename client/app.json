@@ -1,0 +1,44 @@
+{
+  "pages":[
+    "pages/find/find",
+    "pages/destination/destination",
+    "pages/index/index",
+    "pages/personal/personal"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "首页",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "position": "bottom",
+    "borderStyle": "white",
+    "backgroundColor":"#ffffff",
+    "list": [
+      {
+      "pagePath": "pages/index/index",
+      "text": "首页",
+      "iconPath": "/images/navbar/home.png",
+      "selectedIconPath": "/images/navbar/home_active.png"
+    },
+    {
+      "pagePath": "pages/destination/destination",
+      "text": "目的地",
+      "iconPath": "/images/navbar/destination.png",
+      "selectedIconPath": "/images/navbar/destination_active.png"
+    },
+    {
+      "pagePath": "pages/find/find",
+      "text": "发现",
+      "iconPath": "/images/navbar/find.png",
+      "selectedIconPath": "/images/navbar/find_active.png"
+    },
+    {
+      "pagePath": "pages/personal/personal",
+      "text": "我的",
+      "iconPath": "/images/navbar/my.png",
+      "selectedIconPath": "/images/navbar/my_active.png"
+    }]
+  }
+}
