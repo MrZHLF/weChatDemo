@@ -6,7 +6,7 @@
 * pages-存放独立的文件
 
 ## 下载地址
-git@github.com:MrZHLF/-.git
+git clone git@github.com:MrZHLF/-.git
 
 ## 项目截图
 ![baidu](./client/images/1.png)
