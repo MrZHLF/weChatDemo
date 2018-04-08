@@ -1,9 +1,10 @@
 {
   "pages":[
+    "pages/personal/personal",
+    "pages/index/index",
     "pages/find/find",
     "pages/destination/destination",
-    "pages/index/index",
-    "pages/personal/personal"
+    "pages/personal/modify-info/modify-info"
   ],
   "window":{
     "backgroundTextStyle":"light",

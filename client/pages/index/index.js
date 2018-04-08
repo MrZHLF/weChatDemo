@@ -59,5 +59,13 @@ Page({
       wx.navigateTo({
         url: '../me/index',
       })
+    },
+    // 分享功能
+    onShareAppMessage: function () {
+      return {
+        title: '微信小程序联盟',
+        desc: '最具人气的小程序开发联盟!',
+        path: '/page/index?id=123'
+      }
     }
 })

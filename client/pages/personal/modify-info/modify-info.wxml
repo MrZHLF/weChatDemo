@@ -1,0 +1,8 @@
+<!-- 常用功能实现 -->
+<view class='phone'>
+  <image src='/images/icon/phone.png'></image>
+  <input class="input" type="number" name="input" bindinput="bindInput" placeholder='请输入电话号码' />
+  <view class="btn-area">
+    <button type="primary" bindtap="makePhoneCall" disabled="{{disabled}}">拨打</button>
+  </view>
+</view>

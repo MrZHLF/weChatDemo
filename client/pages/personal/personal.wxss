@@ -1,1 +1,105 @@
-/* pages/personal/personal.wxss */
+page {
+  background: #f0ede2;
+}
+.personal {
+  width: 100%;
+}
+.header {
+  width: 100%;
+  height: 416rpx;
+  background: #d9d3c6;
+}
+.header .edit {
+  height: 78rpx;
+  overflow: hidden;
+  display: block;
+}
+.header .edit text {
+  font-size: 13px;
+  color: #948475;
+  font-weight: bold;
+  float: right;
+  margin: 36rpx 24rpx 0 0;
+}
+.info {
+  height: 186rpx;
+  width: 100%;
+  position: relative;
+}
+.info .header-img {
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  height: 186rpx;
+  width: 186rpx;
+  /* background: #fff; */
+  padding: 10rpx;
+  box-sizing: border-box;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+.header-img .userinfo-avatar {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  display: block;
+}
+.header-img .userinfo-nickname {
+   color: #aaa;
+   font-size: 25rpx;
+   display: inline-block;
+   width: 230rpx;
+}
+.send {
+  position: absolute;
+  top: 93rpx;
+  right: 0;
+  width: 282rpx;
+  text-align: center; 
+}
+.send text {
+  background: #948475;
+  color: #fff3ce;
+  font-size: 14px;
+  padding: 5px 11px;
+  border-radius: 15px;
+}
+.main {
+  width: 100%;
+  height: 80rpx;
+  display: flex;
+  line-height: 80rpx;
+  justify-content: space-around;
+  background: white;
+  margin-bottom: 20rpx;
+}
+.main text {
+  font-size: 30rpx;
+  color: #948475;
+  font-weight: bold;
+}
+.listBox {
+  width: 100%;
+}
+.listBox .box {
+  padding: 0 30rpx;
+  background: #fff;
+  height: 86rpx;
+  line-height: 86rpx;
+  border-bottom: 1px solid #f0ede2;
+  display: flex;
+  align-items: center;
+}
+.listBox .box:nth-child(2) {
+  margin-bottom: 20rpx;
+}
+.listBox .box text {
+  font-size: 30rpx;
+   padding-left: 20rpx; 
+  color: #948475;
+}
+/* icon图标 */
+.box image {
+  width: 25px;
+  height: 25px;
+}

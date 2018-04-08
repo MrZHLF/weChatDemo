@@ -1,2 +1,36 @@
-<!--pages/personal/personal.wxml-->
-<text>我的</text>
+<view class="personal">
+  <!-- 头部内容 -->
+  <view class='header'>
+    <view class='edit'>
+      <text bindtap='edit'>设置</text>
+    </view>
+    <view class='info'>
+      <view class='header-img' bindtap="bindViewTap">
+        <!-- <view class='touxiang' bindtap="qianxian"></view> -->
+        <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image> 
+        <text class="userinfo-nickname">{{userInfo.nickName}}</text>      
+      </view>
+      <view class='send'>
+        <text>签到送积分</text>
+      </view>
+    </view>
+    <view >
+    </view>
+  </view>
+  <!-- 中间内容 -->
+  <view class='main'>
+    <view class='main-left'>
+      <text>积分</text>
+    </view>
+    <view class='main-right'>
+      <text>现金券</text>
+    </view>
+  </view>
+  <!-- 列表内容 -->
+  <view class='listBox'>
+    <view class='box' wx:for="{{imgUrl}}" wx:key="{{index}}" data-index='{{index}}' bindtap='listItem'>
+      <image src='{{item.imgUrl}}'></image>
+      <text>{{item.title}}</text>
+    </view>
+  </view>
+</view>
