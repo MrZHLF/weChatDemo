@@ -4,6 +4,7 @@
     "pages/index/index",
     "pages/find/find",
     "pages/destination/destination",
+    "pages/personal/Map/Map",
     "pages/personal/modify-info/modify-info"
   ],
   "window":{

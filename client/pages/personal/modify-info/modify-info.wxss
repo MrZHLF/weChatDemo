@@ -4,10 +4,15 @@
   height: 100%;
   position: relative;
 }
+.phone .icon {
+  position: absolute;
+  top: 5rpx;
+  left: 10rpx;
+}
 .input{
   width: 100%;
   height: 70rpx;
-  padding-left: 20rpx;
+  padding-left: 70rpx;
   border-bottom: 1px solid #948475;
   color:#948475;
   font-size: 30rpx;

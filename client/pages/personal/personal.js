@@ -31,7 +31,7 @@ Page({
   //事件处理函数  
   bindViewTap: function () {
     wx.navigateTo({
-      url: '/pages/index/index'
+      url: '/pages/personal/Map/Map'
     })
   },
   edit() {

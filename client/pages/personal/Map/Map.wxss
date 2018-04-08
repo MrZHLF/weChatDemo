@@ -1,0 +1,8 @@
+/* pages/personal/login/login.wxss */
+page {
+  background: #f0ede2;
+}
+.map {
+  width: 100%;
+  height: 100%;
+}
