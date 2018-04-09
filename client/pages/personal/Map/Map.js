@@ -11,8 +11,8 @@ Page({
       position: {
         left: 320,
         top: 100 - 50,
-        width: 20,
-        height: 20
+        width: 25,
+        height: 25
       },
       clickable: true
     },
@@ -20,18 +20,16 @@ Page({
       id: 2,
       iconPath: '/images/icon/jia.png',
       position: {
-        left: 340,
+        left: 350,
         top: 100 - 50,
-        width: 20,
-        height: 20
+        width: 25,
+        height: 25
       },
       clickable: true
     }
     ],
     circles: []
-
   },
-
   onLoad: function () {
     var _this = this;
 
@@ -42,18 +40,13 @@ Page({
           view: {
             Height: res.windowHeight
           }
-
         })
-
-
-
       }
     })
-
     wx.getLocation({
       type: 'wgs84', // 默认为 wgs84 返回 gps 坐标，gcj02 返回可用于 wx.openLocation 的坐标
       success: function (res) {
-
+        console.log(res);
         _this.setData({
           latitude: res.latitude,
           longitude: res.longitude,
@@ -65,7 +58,6 @@ Page({
             height: 50,
             // iconPath: "/images/icon/me.png",
             title: "哪里"
-
           }],
           circles: [{
             latitude: res.latitude,
@@ -75,14 +67,10 @@ Page({
             radius: 3000,
             strokeWidth: 1
           }]
-
         })
       }
-
     })
-
   },
-
   regionchange(e) {
     console.log("regionchange===" + e.type)
   },
@@ -119,9 +107,5 @@ Page({
       })
       // }
     }
-
-
   },
-
-
 })

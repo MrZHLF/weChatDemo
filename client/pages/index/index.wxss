@@ -35,6 +35,24 @@ page{
   font-size: 30rpx;
   font-weight: bold;
   color: #948475;
+  display:block;
+  text-align:center;
+}
+/* 公告 */
+.swiper_container {
+   height: 55rpx;
+   width: 100%;
+   margin-top: 20rpx;
+   line-height: 55rpx;
+   background: #fff;
+} 
+.swiper_item {
+  font-size: 25rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  letter-spacing: 2px;
+  padding-left: 20rpx;
 }
 /* 目的地推荐 */
 .slide {

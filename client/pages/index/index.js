@@ -35,6 +35,14 @@ Page({
           }
         ]
     },
+    onLoad(e) {
+      this.setData({
+        msgList: [
+          { url: "url", title: "公告：来一场说走就走的旅游" },
+          { url: "url", title: "公告：趁年轻，多走走，看看外面的世界" },
+          { url: "url", title: "公告：你想和一群有志青年一起走遍世界吗？" }]
+      });
+    },
     changeIndicatorDots: function (e) {
       this.setData({
         indicatorDots: !this.data.indicatorDots

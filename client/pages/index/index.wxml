@@ -6,8 +6,10 @@
   <!-- 分类 -->
   <view class='category'>
     <view class='box'>
-      <image src='/images/home/view.png'></image>
-      <text class='title'>景点</text>
+      <navigator url="/pages/index/details/details">
+        <image src='/images/home/view.png'></image>
+        <text class='title'>景点</text>
+      </navigator>
     </view>
     <view class='box'>
       <image src='/images/home/ticket.png'></image>
@@ -23,6 +25,16 @@
     </view>
   </view>
 </view>
+<!-- 公告 -->
+<swiper class="swiper_container" vertical="true" autoplay="true" circular="true" interval="2000">
+  <block wx:for="{{msgList}}">
+   <navigator url="/pages/index/index?title={{item.url}}" open-type="navigate">
+    <swiper-item>
+     <view class="swiper_item">{{item.title}}</view>
+    </swiper-item>
+   </navigator>
+  </block>
+ </swiper>
 <!-- 目的地推荐 -->
 <view class='slide'>
   <view class='title'>

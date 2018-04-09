@@ -4,7 +4,8 @@
 ## 目录结构：
 * images-存放项目图片
 * pages-存放独立的文件
-
+## 功能
+实现百度地图，分享，日期选择器，电话拨打获取用户权限
 ## 下载地址
 git clone git@github.com:MrZHLF/-.git
 

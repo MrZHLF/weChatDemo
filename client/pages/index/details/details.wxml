@@ -1,0 +1,139 @@
+<!-- 轮播图展示 -->
+<swiper indicator-dots="{{indicatorDots}}"
+autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+  <swiper-item wx:for="{{imgUrls}}">
+    <view class="swiper-img" >
+    <view class='image-wrapper'>
+      <view class='image-wrapper-img'>
+        <image src="{{item}}" class="slide-image"/>
+      </view>
+    </view>
+    </view>
+  </swiper-item>
+</swiper>
+<!-- 内容区域 -->
+<view class='desbox'>
+  <view class='desbox-item'>
+    <view class='desboxLeft'>
+      <text class='bold-text'>北海公园:</text>
+        <text class='txt'>北海位于北京城的中心，是中国现存历史上建园最早、保存最完整、文化沉积最深厚的古典皇家园林。北海的形成和发展，历经金、元、明、清数个朝代，承载着中国近千年的历史和文化，形成了以皇家园林为代表的造园艺术风格，它是凝聚着历代园林文化艺术之大成的杰作。</text>
+      </view>
+      <view class='desboxRight'>
+        <image src='/images/icon/share.png'></image>
+        <text>分享</text>
+    </view>
+  </view>
+</view>
+<!-- 景区地址 -->
+<view class='address'>
+  <view class='address-list'>
+     <view class='address-img' bindtap='MapLocation'>
+    <image src='/images/icon/address.png'></image>
+  </view>
+  <view class='address-box'>
+    <text class='title'>四川省巴中市南江县北部边缘</text>
+    <view class='data'>
+      <text>2月13号</text>
+      <text>17°C~23°C</text>
+      <text>晴</text>
+    </view>
+  </view>
+  </view>
+</view>
+<!-- 日期 -->
+<view class='data-wrapper'>
+   <swiper id='swiper' duration='200' display-multiple-items='5'>
+     <swiper-item>
+        <view class='data-item active'>
+          <scroll-view>
+            <text>4月11日</text>
+            <text>￥30</text>
+          </scroll-view>
+        </view>
+     </swiper-item>
+     <swiper-item>
+        <view class='data-item'>
+          <scroll-view>
+            <text>4月12日</text>
+            <text>￥30</text>
+          </scroll-view>
+        </view>
+     </swiper-item>
+     <swiper-item>
+        <view class='data-item'>
+          <scroll-view>
+            <text>4月13日</text>
+            <text>￥30</text>
+          </scroll-view>
+        </view>
+     </swiper-item>
+     <swiper-item>
+        <view class='data-item'>
+          <scroll-view>
+            <text>4月14日</text>
+            <text>￥30</text>
+          </scroll-view>
+        </view>
+     </swiper-item>
+     <swiper-item>
+        <view class='data-item'>
+          <scroll-view>
+            <text>4月15日</text>
+            <text>￥30</text>
+          </scroll-view>
+        </view>
+     </swiper-item>
+     <swiper-item>
+        <view class='data-item'>
+          <scroll-view>
+            <text>{{selectedProduceDate}}</text>
+            <text>￥30</text>
+          </scroll-view>
+        </view>
+     </swiper-item>
+     <swiper-item>
+        <view class='data-item'>
+          <scroll-view>
+            <!-- <text>更多</text> -->
+            <picker mode="date"
+                      value='{{selectedProduceDate}}'
+                      start="{{startProduceDate}}"
+                      end="{{endProduceDate}}"
+                      field="month"
+                      bindchange='dateChange'>
+                <view class='whitebox'>更多</view> 
+                <!-- <text></text> -->
+              </picker>
+            <text>￥30</text>
+          </scroll-view>
+        </view>
+     </swiper-item>
+   </swiper>
+</view>
+<!-- 订购 -->
+<view class='price'>
+  <text class='name'>丘北普者黑风景区成人票1张</text>
+  <view class='detail'>
+    <view class='datail-box'>
+      <text>￥218</text>
+      <text>起</text>
+    </view>
+    <text class='derce'>立减2元</text>
+   <text class='order'>抢购</text>
+  </view>
+  <view class='info'>
+    <text>套餐说明</text>
+  </view>
+</view>
+
+<!-- 附近 -->
+<view class='Package'>
+  <view class='Package-img'>
+    <image src="/images/icon/Package.png"></image>
+  </view>
+  <text>景点/酒店附近的套餐</text>
+  <text>查看优惠</text>
+  <view class='Package-right-img'>
+    <image src='/images/icon/right.png'></image>
+  </view>
+</view>

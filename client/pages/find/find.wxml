@@ -16,7 +16,7 @@
             <image src='{{item.imgUrl}}'></image>
           </view>
         </view>
-        </block>
+      </block>
     </swiper-item>
     <!-- 2 -->
     <swiper-item>

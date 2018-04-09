@@ -1,9 +1,10 @@
 {
   "pages":[
-    "pages/personal/personal",
+    "pages/index/details/details",
     "pages/index/index",
     "pages/find/find",
     "pages/destination/destination",
+    "pages/personal/personal",
     "pages/personal/Map/Map",
     "pages/personal/modify-info/modify-info"
   ],
